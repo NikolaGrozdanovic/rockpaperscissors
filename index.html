@@ -1,55 +1,38 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Rock Paper Scissors</title>
-    </head>
-    <body>
 
+<head>
+  <meta charset="utf-8">
+  <title>RPS</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link href="style.css" rel="stylesheet">
+</head>
 
+<body>
+    <div id="firstt">
+      <h1>It's time to play the game!</h1>
+    </div>
+  <!--Display Result box-->
+    <div id="scoreboard">
+        <div class="result">Your Score:</div>
+        <div class="result">Computer Score:</div>
+    </div>
+    <!--Welcome Screen-->
+    <div id="welcomer">
 
+    </div>
+    <!--Choice Buttons-->
+    <div id="btns">
+        <button id="btn1"><img src="icons8-rock-50.png"></button>
+        <button id="btn2"><img src="icons8-paper-50.png"></button>
+        <button id="btn3"><img src="icons8-scissors-50.png"></button>
+    </div>
 
-        <script>
-        let playerWins = 0;
-        let computerWins = 0;
-        let ties  = 0;
-        let computerChoice;
-        
-        
-        function computerPlay() {
-          let comp = Math.floor(Math.random() * 3);
-          if (comp === 1) {
-              computerChoice = 'rock';
-          } else if (comp === 2) {
-              computerChoice = 'paper';
-          } else {
-              computerChoice = 'scissors';
-          }
-          return computerChoice;
-        }
+  
+  <script src="game.js"></script>
+</body>
 
-        function playRound (playerSelection, computerSelection) {
-            if (playerSelection === computerSelection) {
-                return 'It\'s a tie!';
-            } else if (playerSelection === 'rock' && computerSelection === 'paper') {
-                return "You lost! Paper beats rock."
-            } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
-                return "You won! Rock beats scissors."
-            } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
-                return "You won! Scissors beats paper."
-            } else if (playerSelection === 'scissors' && computerSelection === 'rock') {
-                return "You lost! Rock beats scissors."
-            } else if (playerSelection === 'paper' && computerSelection === 'rock') {
-                return "You won! Paper beats rock."
-            } else if (playerSelection === 'paper' && computerSelection === 'scissors') {
-                return "You lost! Scissors beats paper."
-            } else {
-                return "Invalid input."
-            }
-        }
-        
-        const playerSelection = 'scissors';
-        let computerSelection = computerPlay();
-           
-        </script>
-    </body>
 </html>

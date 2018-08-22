@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Aldrich';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Aldrich Regular'), local('Aldrich-Regular'), url(https://fonts.gstatic.com/s/aldrich/v8/MCoTzAn-1s3IGyJMVacY3w.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background-color: #1D1160;
+    color: white;
+    font-family: 'Aldrich', sans-serif;
+}
+
+#firstt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;   
+    padding: 20px;
+}
+
+#scoreboard {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto;
+}
+
+.result {
+    display: inline-grid;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+#welcomer {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+    border: 10px solid #00788C;
+    border-radius: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#btns {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: 5px solid #00788C;
+    box-shadow: 1px 5px 5px;
+}
+
+button:active {
+    transform: translateY(5px);
+}
+
+button:hover {
+    background-color: #9370DB;
+}
